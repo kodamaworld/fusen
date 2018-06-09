@@ -1,50 +1,55 @@
 * {
   font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-.resizable {
-  padding-top: 0.5em;
+body {
+  font-size: 16px;
+}
+
+.memo {
+  padding-top: 16px;
   position: absolute;
-}
-
-.resizable p {
-  margin: 0;
-}
-
-.resizable textarea[class*=text] {
+  width: 150px;
+  height: 150px;
   background: #ffe400;
+}
+
+.memo_body {
   padding: 4px;
 }
 
-.resizable textarea[class*=head] {
+.memo_title {
+  margin-right: 16px;
   height: 1.5em;
-  width: 130px;
-  max-height: 1.5em;
-  min-height: 1.5em;
-  vertical-align: middle;
-  background: #fff17a;
+  width: 100%;
+  display: block;
+  resize: none;
 }
 
-.resizable .ui-icon {
-  vertical-align: center;
+.memo_close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
-.resizable textarea {
+.memo textarea {
   margin: 0;
-  width: 150px;
-  height: 150px;
-  background: white;
+  display: block;
+  width: 100%;
+  background-color: transparent;
   resize: none;
   border: none;
 }
 
-.resizable textarea:focus {
+.memo textarea:focus {
   outline: none;
 }
 
 .ui-widget-content:active {
   z-index: 2;
 }
+
 .ui-widget-content {
   display: inline-block;
   background: #fff17a;
